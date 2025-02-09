@@ -33,7 +33,7 @@ class MyFrame(wx.Frame):
         main_sizer.Add(self.file_list, 1, wx.EXPAND | wx.ALL, 5)
 
         # Создаем пустые квадратные виджеты в центре
-        center_grid = wx.GridSizer(2, 2, 5, 5)
+        center_grid = wx.GridSizer(2, 2, 10, 10)
         self.squares = []
         for _ in range(4):
             square = wx.Button(panel, label="")
