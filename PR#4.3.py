@@ -74,7 +74,7 @@ class MyFrame(wx.Frame):
             files = os.listdir(path)
             for file in files:
                 self.file_listbox.Append(file)
-            self.file_listbox.SetSize((-1, self.file_listbox.GetBestSize()[1]))
+#            self.file_listbox.SetSize((-1, self.file_listbox.GetBestSize()[1]))
         except Exception as e:
             print(f"Ошибка при чтении директории: {e}")
 
